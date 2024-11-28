@@ -43,8 +43,4 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-
-    // TODO: 1. Agregar dependencia de RecyclerView
-    implementation(libs.recycler.view)
-    // implementation("androidx.recyclerview:recyclerview:1.3.2") <- De esta forma si su proyecto no soporta Version Catalog
 }
