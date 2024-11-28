@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         val ivPhoto1 = findViewById<ImageView>(R.id.ivImage1)
         ivPhoto1.setImageResource(R.drawable.ic_electronics)
 
-        // Categoria Electronics
+        // Categoria Musics
         val tvTitle2 = findViewById<TextView>(R.id.tvTitle2)
         tvTitle2.text = "Musics"
         val ivPhoto2 = findViewById<ImageView>(R.id.ivImage2)
