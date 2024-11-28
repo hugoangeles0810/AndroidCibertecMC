@@ -7,9 +7,15 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class CategoriesRVAdapter(
-    private val items: List<Category>
-) : RecyclerView.Adapter<CategoriesRVAdapter.ViewHolder>() {
+// TODO: 4. Crear la clase Adapte que actuará como puente entre la data y la interfaz de usuario
+class CategoriesRVAdapter : RecyclerView.Adapter<CategoriesRVAdapter.ViewHolder>() {
+
+    private var items: List<Category> = emptyList()
+
+    fun updateItems(items: List<Category>) {
+        this.items = items
+        notifyDataSetChanged()
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val itemView = LayoutInflater
@@ -28,6 +34,7 @@ class CategoriesRVAdapter(
         holder.bind(category)
     }
 
+    // TODO: 5. Crear clase view holder que permite obtener la referencia a los componentes visual del item que quiero mostrar
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val tvTitle: TextView = itemView.findViewById(R.id.tvTitle)
         private val ivPhoto: ImageView = itemView.findViewById(R.id.ivImage)

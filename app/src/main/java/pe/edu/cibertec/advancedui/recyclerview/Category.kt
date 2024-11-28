@@ -2,7 +2,7 @@ package pe.edu.cibertec.advancedui.recyclerview
 
 import androidx.annotation.DrawableRes
 
-// TODO: 2. Definir la clase item, encargada de contener la información por cada listado
+// TODO: 2.1 Definir la clase item, encargada de contener la información por cada listado
 data class Category(
     val id: String,
     val name: String,
